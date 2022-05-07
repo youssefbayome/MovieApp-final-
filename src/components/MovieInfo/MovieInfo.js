@@ -27,7 +27,7 @@ const MovieInfo = () => {
           <div className="movie_header">
             <img
               className="locandina"
-              src={movie.Images[3]}
+              src={movie.Images[2]}
               alt="movie Poster"
             />
             <h1>{movie.Title}</h1>
@@ -56,7 +56,7 @@ const MovieInfo = () => {
         <div
           className="blur_back bright_back"
           style={{
-            backgroundImage: `url(${movie.Images[2]})`,
+            backgroundImage: `url(${movie.Images[0]})`,
           }}
         ></div>
       </div>

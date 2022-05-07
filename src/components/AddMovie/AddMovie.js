@@ -9,6 +9,7 @@ const AddMovie = () => {
     Images: [],
     Plot: "",
     Genre: "",
+    imdbID: "",
   });
 
   const navigate = useNavigate();
@@ -19,6 +20,7 @@ const AddMovie = () => {
       Images: [],
       Plot: "",
       Genre: "",
+      imdbID: "",
     });
     let path = "/";
     navigate(path);
@@ -55,6 +57,24 @@ const AddMovie = () => {
             placeholder="About Movie"
             type="Text"
             onChange={(e) => setMovie({ ...movie, Plot: e.target.value })}
+          />
+          <div className="bg-top">
+            <div className="bg-inner"></div>
+          </div>
+          <div className="bg-right">
+            <div className="bg-inner"></div>
+          </div>
+          <div className="bg">
+            <div className="bg-inner"></div>
+          </div>
+        </div>
+        <div className="control block-cube block-input">
+          <input
+            required
+            name="Plot"
+            placeholder="movie ID"
+            type="Text"
+            onChange={(e) => setMovie({ ...movie, imdbID: e.target.value })}
           />
           <div className="bg-top">
             <div className="bg-inner"></div>
