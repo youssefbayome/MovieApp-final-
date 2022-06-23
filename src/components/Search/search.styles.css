@@ -1,13 +1,26 @@
-.search{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   padding: 10px;
-   width: 800px;
-   margin: 10px auto;
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 800px;
+  margin: 10px auto;
 }
-.search input{
-width: 100%;
-padding: 15px;
-border-radius: 5px;
+.search input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: auto;
+    margin: 10px auto;
+  }
+  .search input {
+    width: 80%;
+  }
 }
